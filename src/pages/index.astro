@@ -5,35 +5,44 @@ import AnimatedTitle from '../components/AnimatedTitle.astro';
 ---
 
 <Layout title="Tampon Web Conception">
-		<section class="flex justify-center ">
-			<div class="grid grid-cols-2 place-items-center mx-auto max-w-screen-xl md:p-8">
-				<div class="w-full flex flex-col align-center">
-					<h1><AnimatedTitle></h1>
-					<h2 class="text-xl tracking-widest mt-8">Création de sites et refonte professionnelle</h2>
+		<section class="flex justify-center">
+			<div class="sm:grid grid-cols-2 place-items-center mx-auto max-w-screen-2xl p-2 md:p-4">
+				<div class="w-full">
+					<h1 class="hidden md:block"><AnimatedTitle ></h1>
+					<h2 class="font-funnel sm:text-center text-xs max-w-sm mx-auto sm:max-w-full sm:text-xl tracking-widest sm:mt-8">Elevons vos projets vers de nouveaux sommets</h2>
 				</div>
-				<div class="grid-rows-1">
-					<div class="grid grid-cols-1 place-items-center min-h-72 text-4xl font-righteous"><h1>Elevons vos projets vers de nouveaux sommets</h1></div>
-					<div class="flex flex-col lg:flex-row justify-around gap-6 p-4 items-stretch">
-						<div class="flex-row justify-between card bg-gray-900 shadow-lg rounded-lg p-6 w-full max-w-xs min-h-full transform transition duration-500 hover:scale-105" data-speed="1.2">
-							<h3 class="text-xl font-bold mb-2">Basique</h3>
-							<p class="mb-4">Un site vitrine simple et efficace pour votre présence en ligne.</p>
-							<p class="text-2xl font-semibold text-blue-300 mb-6">500 €</p>
+				<div class="">
+					<div class="grid place-items-center my-4 sm:min-h-72 text-4xl font-righteous tracking-wider mx-auto">
+						<div class="text-center sm:text-left max-w-lg"><h1>Création de sites<br> et refonte professionnelle</h1></div>
+					</div>
+					<div class="grid-rows-2">
+					<div class="flex flex-col xl:flex-row justify-around gap-6 p-4 items-stretch min-w-full">
+						<div class="flex-row justify-between card bg-gray-200 dark:bg-gray-900 shadow-lg rounded-lg p-6 w-full sm:max-w-sm min-h-full transform transition duration-500 hover:scale-105" data-speed="1.2">
+							<a href="/tarifs/#vitrine">
+							<h3 class="text-xl font-righteous tracking-wider mb-2">Vitrine</h3>
+							<p class="mb-4">Site de présentation de votre activité avec une page de contact.</p>
+							<p class="text-xs text-blue-700 dark:text-blue-300 mb-6">à partir de <span class="text-2xl font-semibold ">500 €</span></p>
 							<button class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-light bottom-0">En savoir plus</button>
-						</div>
-						<div class="flex-row justify-between card bg-gray-900 shadow-lg rounded-lg p-6 w-full max-w-xs min-h-full transform transition duration-500 hover:scale-105" data-speed="1.5">
-							<h3 class="text-xl font-bold mb-2">Standard</h3>
+						</a></div>
+						<div class="flex-row justify-between card bg-gray-200 dark:bg-gray-900  shadow-lg rounded-lg p-6 w-full sm:max-w-sm min-h-full transform transition duration-500 hover:scale-105" data-speed="1.5">
+							<a href="/tarifs/#pro">
+							<h3 class="text-xl font-righteous tracking-wider mb-2">Pro</h3>
 							<p class="mb-4">Site complet avec optimisation SEO et design personnalisé.</p>
-							<p class="text-2xl font-semibold text-emerald-100 mb-6">1000 €</p>
+							<p class="text-xs text-emerald-900 dark:text-emerald-100 mb-6">à partir de <span class="text-2xl font-semibold ">1000 €</span></p>
 							<button class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-light bottom-0">En savoir plus</button>
+							</a>
 						</div>
-						<div class="flex-row justify-between card bg-gray-900 shadow-lg rounded-lg p-6 w-full max-w-xs min-h-full transform transition duration-500 hover:scale-105" data-speed="1.8">
-							<h3 class="text-xl font-bold mb-2">Premium 💎</h3>
+						<div class="flex-row justify-between card bg-gray-200 dark:bg-gray-900  shadow-lg rounded-lg p-6 w-full sm:max-w-sm min-h-full transform transition duration-500 hover:scale-105" data-speed="1.8">
+							<a href="/tarifs/#premium">
+							<h3 class="text-xl font-righteous tracking-wider mb-2">Premium 💎</h3>
 							<p class="mb-4">Solution sur mesure avec toutes les options avancées.</p>
-							<p class="text-2xl font-semibold text-fuchsia-400 mb-6">sur devis</p>
+							<p class="text-2xl font-semibold text-secondary-dark dark:text-secondary mb-6">sur devis</p>
 							<button class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-light bottom-0">En savoir plus</button>
+						</a>
 						</div>
 					</div>
 				</div>
+			</div>
 				
 			</div>
 		</section>

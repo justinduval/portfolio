@@ -11,6 +11,8 @@ export default {
         "line-svg": "url('/images/line.svg')",
       },
       colors: {
+        black: "#040404",
+        white: "#F2F2F2",
         primary: {
           DEFAULT: "#3400C0", // Couleur principale par défaut
           light: "#4000F0", // Variante claire
@@ -18,7 +20,7 @@ export default {
         },
         secondary: {
           DEFAULT: "#FFD4FC", // Couleur secondaire par défaut
-          light: "#FFEBFE", // Variante claire
+          light: "#FFF0FE", // Variante claire
           dark: "#B300A7", // Variante foncée
         },
         accent: "#FFE82A", // Couleur accentuée

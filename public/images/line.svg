@@ -7,7 +7,6 @@
         stroke: url(#Dégradé_sans_nom_359);
         stroke-miterlimit: 10;
         stroke-width: 15px;
-        stroke-opacity: 0.3;
       }
     </style>
     <linearGradient id="Dégradé_sans_nom_359" data-name="Dégradé sans nom 359" x1="-14.72" y1="686.24" x2="2466.4" y2="686.24" gradientUnits="userSpaceOnUse">
