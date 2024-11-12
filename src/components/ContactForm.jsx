@@ -57,12 +57,9 @@ export default function ContactForm() {
         class="bg-gray-600 border border-gray-300 rounded-lg w-full p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
       ></textarea>
 
-      {successMessage && <p class="text-green-600 mt-4">{successMessage}</p>}
-      {errorMessage && <p class="text-red-600 mt-4">{errorMessage}</p>}
-
       <button
         type="submit"
-        class="bg-violet-700 text-white font-semibold px-4 py-2 rounded hover:bg-violet-600 w-full"
+        class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-light font-semibold  w-full"
       >
         Envoyer
       </button>

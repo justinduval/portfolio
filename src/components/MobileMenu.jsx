@@ -16,7 +16,8 @@ function MobileMenu() {
           <a
             key={index}
             href={link.href}
-            className="text-xl bg-gradient-to-bl from-secondary-dark via-secondary-dark to-primary-light bg-clip-text text-transparent md:filter-none hover:scale-110 transition duration-300 ease-in-out"
+            className="text-xl bg-gradient-to-bl from-white via-white to-primary-light 
+            bg-clip-text text-transparent hover:scale-110 transition duration-300 ease-in-out"
           >
             {link.label}
           </a>
