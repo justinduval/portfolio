@@ -1,0 +1,47 @@
+---
+
+import Layout from "../layouts/Layout.astro"
+
+import ContactForm from "../components/ContactForm";
+
+let successMessage = '';
+let errorMessage = '';
+
+const handleSubmit = async (event) => {
+   event.preventDefault();
+
+   const formData = new FormData(event.target);
+   const formDataJSON = Object.fromEntries(formData.entries());
+
+   try {
+       const response = await fetch('/api/contact', {
+           method: 'POST',
+           headers: {
+               'Content-Type': 'application/json',
+           },
+           body: JSON.stringify(formDataJSON),
+       });
+
+       if (response.ok) {
+           successMessage = 'Message envoyé avec succès !';
+           errorMessage = '';
+           event.target.reset();
+       } else {
+           throw new Error('Erreur lors de l\'envoi');
+       }
+   } catch (error) {
+       successMessage = '';
+       errorMessage = 'Une erreur est survenue. Merci de réessayer.';
+   }
+};
+---
+
+<Layout title="Tampon Web Conception - Contact">
+		<section class="flex justify-center ">
+			<div class="w-3/4 mt-8">
+				<div class="w-full">
+					<ContactForm client:visible/>
+				</div>
+			</div>
+		</section>
+</Layout>

@@ -1,0 +1,40 @@
+---
+import Layout from "../layouts/Layout.astro"
+import AnimatedTitle from '../components/AnimatedTitle.astro';
+
+---
+
+<Layout title="Tampon Web Conception">
+		<section class="flex justify-center ">
+			<div class="grid grid-cols-2 place-items-center mx-auto max-w-screen-xl md:p-8">
+				<div class="w-full flex flex-col align-center">
+					<h1><AnimatedTitle></h1>
+					<h2 class="text-xl tracking-widest mt-8">Création de sites et refonte professionnelle</h2>
+				</div>
+				<div class="grid-rows-1">
+					<div class="grid grid-cols-1 place-items-center min-h-52">HERO</div>
+					<div class="flex flex-col lg:flex-row items-center justify-around gap-6 p-4">
+						<div class="card bg-gray-900 shadow-lg rounded-lg p-6 w-full max-w-xs min-h-72 transform transition duration-500 hover:scale-105" data-speed="1.2">
+							<h3 class="text-xl font-bold mb-2">Basique</h3>
+							<p class="mb-4">Un site vitrine simple et efficace pour votre présence en ligne.</p>
+							<p class="text-2xl font-semibold text-blue-300 mb-6">500 €</p>
+							<button class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-light">En savoir plus</button>
+						</div>
+						<div class="card bg-gray-900 shadow-lg rounded-lg p-6 w-full max-w-xs min-h-72 transform transition duration-500 hover:scale-105" data-speed="1.5">
+							<h3 class="text-xl font-bold mb-2">Standard</h3>
+							<p class="mb-4">Site complet avec optimisation SEO et design personnalisé.</p>
+							<p class="text-2xl font-semibold text-emerald-100 mb-6">1000 €</p>
+							<button class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-light">En savoir plus</button>
+						</div>
+						<div class="card bg-gray-900 shadow-lg rounded-lg p-6 w-full max-w-xs min-h-72 transform transition duration-500 hover:scale-105" data-speed="1.8">
+							<h3 class="text-xl font-bold mb-2">Premium 💎</h3>
+							<p class="mb-4">Solution sur mesure avec toutes les options avancées.</p>
+							<p class="text-2xl font-semibold text-fuchsia-400 mb-6">sur devis</p>
+							<button class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-light">En savoir plus</button>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+</Layout>

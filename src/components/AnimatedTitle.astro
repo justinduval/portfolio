@@ -1,0 +1,24 @@
+---
+---
+
+<div id="animated-text" class="text-8xl font-sans font-bold"></div>
+
+<script>
+  import TypeIt from 'typeit';
+
+  new TypeIt("#animated-text", {
+    speed: 60,
+    startDelay: 300,
+    loop: true,
+    deleteSpeed: 40,
+    cursor: true,
+  })
+    .type("TWC")
+    .pause(500)
+    .move(-3)
+    .type("<")
+    .move(3)
+    .type("/>")
+    .pause(500)
+    .go();
+</script>
