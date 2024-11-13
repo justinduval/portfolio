@@ -1,24 +1,61 @@
 ---
 import Layout from "../layouts/Layout.astro"
+
 ---
 
 <Layout title="Tampon Web Conception - Prestations">
-	<div class="flex justify-center">
-		<h1 class="text-4xl font-sans font-bold">Nos prestations</h1>
+	<section>
+
+    <div class="flex justify-center mt-44">
+		<div>
+            <h1 class="text-6xl font-sans font-bold">Les prestations</h1>
+            <h2 class="mt-4">Pour chaque projet une offre adaptée à votre besoin.</h2>
+        </div>
 	</div>
-	
-	<section class="p-8 mt-8">
+
+	<div class="flex flex-col xl:flex-row justify-center gap-4 p-4 mt-8 items-stretch min-w-full">
+        <div class="flex-row justify-between card bg-gray-200 dark:bg-gray-900 shadow-lg rounded-lg p-6 w-full sm:max-w-sm min-h-full transform transition duration-500 hover:scale-105">
+            <a href="/tarifs/#vitrine">
+            <h3 class="text-xl font-righteous tracking-wider mb-2">Vitrine</h3>
+            <p class="mb-4">Site de présentation de votre activité avec une page de contact.</p>
+            <p class="text-xs text-blue-700 dark:text-blue-300 mb-6">à partir de <span class="text-2xl font-semibold ">500 €</span></p>
+            <button class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-light bottom-0">En savoir plus</button>
+        </a></div>
+        <div class="flex-row justify-between card bg-gray-200 dark:bg-gray-900 shadow-lg rounded-lg p-6 w-full sm:max-w-sm min-h-full transform transition duration-500 hover:scale-105">
+            <a href="/tarifs/#pro">
+            <h3 class="text-xl font-righteous tracking-wider mb-2">Pro</h3>
+            <p class="mb-4">Site complet avec optimisation SEO et design personnalisé.</p>
+            <p class="text-xs text-emerald-900 dark:text-emerald-100 mb-6">à partir de <span class="text-2xl font-semibold ">1000 €</span></p>
+            <button class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-light bottom-0">En savoir plus</button>
+            </a>
+        </div>
+        <div class="flex-row justify-between card bg-gray-200 dark:bg-gray-900 shadow-lg rounded-lg p-6 w-full sm:max-w-sm min-h-full transform transition duration-500 hover:scale-105">
+            <a href="/tarifs/#premium">
+            <h3 class="text-xl font-righteous tracking-wider mb-2">Premium 💎</h3>
+            <p class="mb-4">Solution sur mesure avec toutes les options avancées.</p>
+            <p class="text-2xl font-semibold text-secondary-dark dark:text-secondary mb-6">sur devis</p>
+            <button class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-light bottom-0">En savoir plus</button>
+        </a>
+        </div>
+    </div>
+    </section>
+
+	<section class="p-8 mt-16">
         <div class="max-w-4xl mx-auto">
-            <p>Chez Tampon Web Conception, nous créons des sites internet sur mesure, adaptés aux besoins uniques de chaque client, avec un souci constant de la qualité et de la personnalisation. Chaque projet est conçu pour refléter votre identité et garantir une expérience utilisateur optimale, grâce à des solutions innovantes et un accompagnement personnalisé à chaque étape.</p>
+            <p> des sites internet sur mesure, adaptés aux besoins uniques de chaque client, avec un souci constant de la qualité et de la personnalisation. Chaque projet est conçu pour refléter votre identité et garantir une expérience utilisateur optimale, grâce à des solutions innovantes et un accompagnement personnalisé à chaque étape.</p>
         </div>
 	</section>
 	<section id="vitrine" class="bg-primary-dark bg-opacity-20 p-4 mt-8">
-		<div class="max-w-4xl mx-auto">
-        <h2>Vitrine : site de présentation</h2>
-		<p>
+		<div class="flex justify-between gap-4 mx-auto max-w-6xl">
+        
+            <img src="/images/vitrine.jpg" class="w-1/2 rounded-lg" alt="">
+        
+        <div class="justify-center max-w-xl mx-4"><h2 class="text-2xl text-center font-bold">Vitrine : site de présentation</h2>
+		<p class="mt-8">
             Conception de sites vitrines sur mesure pour présenter votre entreprise, avec une navigation fluide et un design adapté à votre identité visuelle.
         </p>
         <p>Livraison : Site responsive, optimisé pour le SEO et facile à gérer.</p>
+    </div>
         </div>
 	</section>
 	<section id="pro" class="bg-primary-dark bg-opacity-20 p-4 mt-8">

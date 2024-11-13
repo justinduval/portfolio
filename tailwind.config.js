@@ -12,7 +12,7 @@ export default {
       },
       colors: {
         black: "#040404",
-        white: "#F2F2F2",
+        white: "#FAFAFA",
         primary: {
           DEFAULT: "#3400C0", // Couleur principale par défaut
           light: "#4000F0", // Variante claire
