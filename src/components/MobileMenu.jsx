@@ -16,8 +16,9 @@ function MobileMenu() {
           <a
             key={index}
             href={link.href}
-            className="text-xl bg-gradient-to-bl from-white via-white to-primary-light
-            bg-clip-text text-transparent hover:scale-110 transition duration-300 ease-in-out"
+            // className="text-xl bg-gradient-to-bl from-white via-white to-primary-light
+            className="text-xl bg-white hover:bg-gradient-to-bl from-primary-light to-secondary-dark text-transparent bg-clip-text
+            hover:scale-110 transition duration-300 ease-in-out"
           >
             {link.label}
           </a>
@@ -45,8 +46,8 @@ function MobileMenu() {
       {/* Menu Mobile - Visible seulement lorsque `isOpen` est `true` */}
       <div
         className={`${
-          isOpen ? "block" : "hidden"
-        } absolute top-full left-0 w-full bg-gray-800 md:hidden`}
+          isOpen ? "flex" : "hidden"
+        } fixed inset-0 top-32 bg-opacity-100 flex flex-col items-center justify-center z-50 bg-gray-800 md:hidden`}
       >
         <ul className="flex flex-col items-center space-y-4 p-4 text-white">
           {links.map((link, index) => (

@@ -5,7 +5,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -15,7 +15,7 @@ import Footer from '../components/Footer.astro';
     </head>
     <body class="min-h-screen flex flex-col bg-white text-black text-lg dark:bg-black dark:text-white font-funnel overflow-hidden overflow-y-auto">
         <Header />
-        <main class="flex-grow md:p-4 mt-16">
+        <main class="flex flex-grow mt-16 mx-auto sm:p-2 md:p-12 py-12 px-2 max-w-screen-2xl w-full">
                 <slot />
         </main>
         <Footer />

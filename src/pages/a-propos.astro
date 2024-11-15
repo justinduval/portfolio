@@ -3,14 +3,42 @@ import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout title="Tampon Web Conception - A propos">
-	<section class="flex justify-center ">
-		<div class="w-3/4 mt-8">
-			<div class="w-full">
-				<h2 class="text-xl font-sans font-bold">A propos</h2>
-			</div>
-			Bienvenue chez Tampon Web Conception, votre partenaire pour la création de sites internet sur mesure. Nous sommes spécialisés dans le développement de sites modernes et optimisés pour répondre aux besoins des entreprises de tous secteurs.
+	<div class="flex justify-center sm:grid">
+		<div class="sm:w-9/12 sm:p-12 bg-white bg-opacity-20 backdrop-blur rounded-lg shadow-lg">
+			<h2 class="text-center text-6xl font-righteous font-bold tracking-widest">A propos de <span class="bg-gradient-to-bl from-primary-light to-secondary-dark text-transparent bg-clip-text">TWC</span></h2>
+			<div class="mt-8 max-w-8xl">
+				<p>Bonjour,</p>
+				<p class="mt-4">Moi c'est Justin, ça fait plus de 15 ans que je suis professionnel dans l'informatique.<br>
+					En 2024, j'ai décidé de concrétiser ma passion pour le <span class="text-primary dark:text-secondary font-bold">développement web</span>, en parallèle de mon emploi salarié actuel.
+					Bien que je travaille à temps plein, je consacre mon temps libre, principalement le soir, 
+					à aider mes clients à créer et améliorer leur présence en ligne.</p>
+				
+				<p class="mt-4">En tant que développeur, j'aime relever de nouveaux défis, 
+					qu'il s'agisse de projets de sites web, d'applications ou d'optimisation.
+					Mon objectif est de livrer des solutions performantes et 
+					adaptées aux besoins spécifiques de chaque projet, tout en maintenant un <span class="text-primary dark:text-secondary font-bold">haut niveau de qualité.</span><br>
+				</p>
 
-Avec une expertise de 15 ans dans le domaine et une approche basée sur l'écoute et l'adaptation, notre mission est de rendre chaque projet unique et fonctionnel. En choisissant Tampon Web Conception, vous optez pour un accompagnement personnalisé, des solutions innovantes et une rigueur technique à chaque étape de votre projet.
+				<p class="mt-4"><span class="text-primary dark:text-secondary font-bold">Ici, on ne fait pas dans le Wordpress vendu à prix d'or !</span>
+				</p>
+
+				<p class="mt-4">Si vous avez une idée de projet ou souhaitez en savoir plus sur mes services, 
+					n'hésitez pas à me contacter. 
+					Je serais ravi de discuter avec vous et de voir comment je peux vous aider à réaliser 
+					vos objectifs numériques.</p>
+				<p class="mt-4">
+				<span class="text-primary dark:text-secondary font-bold">Justin DUVAL</span>
+			</p>	
+			</div>
+			<div class="flex justify-center justify-items-center mt-8">
+				<button class="text-white bg-primary hover:bg-primary-light px-4 py-2 rounded">
+					<a href="/contact">Parlons de votre projet !</a>
+				</button>
+			</div>
+
 		</div>
-	</section>
+		<div class="flex sm:w-3/12">
+			<img src="/images/portrait.webp" class="fixed bottom-0 right-0 sm:right-20 h-4/5 -z-10 opacity-10 sm:z-0 sm:opacity-100 sm:dark:opacity-90" alt="">
+		</div>
+	</div>
 </Layout>

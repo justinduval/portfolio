@@ -17,11 +17,10 @@ export default function ContactForm() {
 
   return (
     <form
-      class="bg-gray-800 shadow-md rounded-lg p-6 w-full max-w-lg"
+      className="bg-white dark:bg-gray-900 sm:mx-16 sm:p-12 bg-opacity-20 backdrop-blur rounded-lg shadow-lg"
       onSubmit={handleSubmit}
     >
-      <h2 class="text-xl font-sans font-bold">Contact</h2>
-      <label class="block mb-2 font-semibold" for="name">
+      <label className="block mb-2 font-semibold" for="name">
         Nom
       </label>
       <input
@@ -30,10 +29,10 @@ export default function ContactForm() {
         name="name"
         required
         onChange={(e) => setName(e.target.value)}
-        class="bg-gray-600 border border-gray-300 rounded-lg w-full p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="bg-white dark:bg-gray-700 border border-gray-300 rounded-lg w-full p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-primary"
       ></input>
 
-      <label class="block mb-2 font-semibold" for="email">
+      <label className="block mb-2 font-semibold" for="email">
         Email
       </label>
       <input
@@ -42,10 +41,10 @@ export default function ContactForm() {
         name="email"
         required
         onChange={(e) => setEmail(e.target.value)}
-        class="bg-gray-600 border border-gray-300 rounded-lg w-full p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="bg-white dark:bg-gray-700 border border-gray-300 rounded-lg w-full p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-primary"
       ></input>
 
-      <label class="block mb-2 font-semibold" for="message">
+      <label className="block mb-2 font-semibold" for="message">
         Message
       </label>
       <textarea
@@ -54,12 +53,12 @@ export default function ContactForm() {
         rows="5"
         required
         onChange={(e) => setMessage(e.target.value)}
-        class="bg-gray-600 border border-gray-300 rounded-lg w-full p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="bg-white dark:bg-gray-700 border border-gray-300 rounded-lg w-full p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-primary"
       ></textarea>
 
       <button
         type="submit"
-        class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-light font-semibold  w-full"
+        className="bg-primary text-white px-4 py-2 rounded hover:bg-primary-light font-semibold  w-full"
       >
         Envoyer
       </button>

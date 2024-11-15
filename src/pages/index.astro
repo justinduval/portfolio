@@ -1,49 +1,24 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import ProductCards from "../components/ProductCards.astro";
 import AnimatedTitle from '../components/AnimatedTitle.astro';
 
 ---
 
 <Layout title="Tampon Web Conception">
-		<section class="flex justify-center">
-			<div class="sm:grid grid-cols-2 place-items-center mx-auto max-w-screen-2xl p-2 md:p-4">
-				<div class="w-full">
-					<h1 class="hidden md:block"><AnimatedTitle ></h1>
-					<h2 class="font-funnel sm:text-center text-xs max-w-sm mx-auto sm:max-w-full sm:text-xl tracking-widest sm:mt-8">Elevons vos projets vers de nouveaux sommets</h2>
+		<section class="flex-grow py-12 px-2 sm:grid mx-auto sm:p-2 md:p-4 max-w-screen-2xl">
+				<div class="justify-center items-center ">
+					<h1 class="text-center w-full text-2xl sm:text-6xl font-righteous font-bold tracking-widest sm:mt-16">Conception de <span class="bg-gradient-to-bl from-primary-light to-secondary-dark text-transparent bg-clip-text">sites web</span></h1>
 				</div>
-				<div class="">
-					<div class="grid place-items-center my-4 sm:min-h-72 text-6xl font-righteous tracking-wider mx-auto">
-						<div class="text-center sm:text-left"><h1>Conception de sites web</h1></div>
-					</div>
-					<div class="grid-rows-2">
-					<div class="flex flex-col xl:flex-row justify-around gap-6 p-4 items-stretch min-w-full">
-						<div class="flex-row justify-between card bg-gray-200 dark:bg-gray-900 shadow-lg rounded-lg p-6 w-full sm:max-w-sm min-h-full transform transition duration-500 hover:scale-105" data-speed="1.2">
-							<a href="/tarifs/#vitrine">
-							<h3 class="text-xl font-righteous tracking-wider mb-2">Vitrine</h3>
-							<p class="mb-4">Site de présentation de votre activité avec une page de contact.</p>
-							<p class="text-xs text-blue-700 dark:text-blue-300 mb-6">à partir de <span class="text-2xl font-semibold ">500 €</span></p>
-							<button class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-light bottom-0">En savoir plus</button>
-						</a></div>
-						<div class="flex-row justify-between card bg-gray-200 dark:bg-gray-900  shadow-lg rounded-lg p-6 w-full sm:max-w-sm min-h-full transform transition duration-500 hover:scale-105" data-speed="1.5">
-							<a href="/tarifs/#pro">
-							<h3 class="text-xl font-righteous tracking-wider mb-2">Pro</h3>
-							<p class="mb-4">Site complet avec optimisation SEO et design personnalisé.</p>
-							<p class="text-xs text-emerald-900 dark:text-emerald-100 mb-6">à partir de <span class="text-2xl font-semibold ">1000 €</span></p>
-							<button class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-light bottom-0">En savoir plus</button>
-							</a>
-						</div>
-						<div class="flex-row justify-between card bg-gray-200 dark:bg-gray-900  shadow-lg rounded-lg p-6 w-full sm:max-w-sm min-h-full transform transition duration-500 hover:scale-105" data-speed="1.8">
-							<a href="/tarifs/#premium">
-							<h3 class="text-xl font-righteous tracking-wider mb-2">Premium 💎</h3>
-							<p class="mb-4">Solution sur mesure avec toutes les options avancées.</p>
-							<p class="text-2xl font-semibold text-secondary-dark dark:text-secondary mb-6">sur devis</p>
-							<button class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-light bottom-0">En savoir plus</button>
-						</a>
-						</div>
+				<div class="sm:flex sm:mt-16">
+					<div class="sm:flex-col sm:mt-16 sm:w-1/2">
+						<h1 class="hidden md:block"><AnimatedTitle ></h1>
+						<h2 class="font-funnel text-center text-xs max-w-sm mx-auto sm:max-w-full sm:text-xl sm:tracking-widest sm:mt-8">Elevons vos projets vers de nouveaux sommets</h2>
+					</div>	
+					<div class="flex flex-col sm:w-1/2 xl:flex-row justify-self-end gap-6 p-4 justify-items-end">
+						<ProductCards >
 					</div>
 				</div>
-			</div>
-				
-			</div>
+
 		</section>
 </Layout>

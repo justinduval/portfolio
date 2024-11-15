@@ -2,32 +2,36 @@
 import Layout from "../layouts/Layout.astro"
 ---
 
-<Layout title="Tampon Web Conception - A propos">
-	<section class="flex justify-center ">
-		<div class="w-3/4 mt-8">
-			<div class="w-full">
-				<h2 class="text-xl font-sans font-bold">Mentions légales</h2>
-			</div>
-			Éditeur du site
+<Layout title="Tampon Web Conception - Mentions légales ">
+	<div class="flex justify-center sm:grid sm:justify-items-center sm:mx-16 sm:p-12 bg-white bg-opacity-20 backdrop-blur rounded-lg shadow-lg">
+		<h2 class="text-center text-6xl font-righteous font-bold tracking-widest">Mentions <span class="bg-gradient-to-bl from-primary-light to-secondary-dark text-transparent bg-clip-text">légales</span></h2>
+		<div>
+			<h4 class="mt-4 font-righteous tracking-widest text-xl">Editeur du site Tampon Web Conception</h4>
+			<p>Responsable de la publication : Justin DUVAL<br>
+				Adresse : 60 chemin armanette 97430 Le Tampon<br>
+				Contact : contact@tamponwebconception.fr<br>
+			</p>
 
-Nom : Tampon Web Conception
-Responsable de la publication : [Nom du gérant]
-Adresse : [Votre adresse complète]
-Contact : [Email et téléphone]
-Hébergement
+			<h4 class="mt-4 font-righteous tracking-widest text-xl">Hébergement</h4>
+			<p>
+			Le site est hébergé par [Nom de l’hébergeur]<br>
+			Adresse : [Adresse de l'hébergeur]<br>
+			Contact : [Email et téléphone de l'hébergeur]<br>
+			</p>
 
-Le site est hébergé par [Nom de l’hébergeur]
-Adresse : [Adresse de l'hébergeur]
-Contact : [Email et téléphone de l'hébergeur]
-Propriété intellectuelle
+			<h4 class="mt-4 font-righteous tracking-widest text-xl">Propriété intellectuelle</h4>
+			<p>
+			Tous les contenus présents sur ce site sont protégés par les lois sur la propriété intellectuelle et restent la propriété de Tampon Web Conception.
+			</p>
 
-Tous les contenus présents sur ce site sont protégés par les lois sur la propriété intellectuelle et restent la propriété de Tampon Web Conception.
-Données personnelles
+			<h4 class="mt-4 font-righteous tracking-widest text-xl">Données personnelles</h4>
+			<p>Le site ne collecte aucune donnée personnelle.</p>
 
-Les données collectées sur le site ne sont utilisées qu'à des fins de contact ou de devis. Tampon Web Conception s’engage à ne jamais transmettre ces données à des tiers.
-Cookies
+			<p>Les données collectées sur le site ne sont utilisées qu'à des fins de contact ou de devis. Tampon Web Conception s’engage à ne jamais transmettre ces données à des tiers.
+			
+			<h4 class="mt-4 font-righteous tracking-widest text-xl">Cookies</h4>
 
-Le site utilise des cookies pour améliorer l'expérience utilisateur et analyser la navigation. Vous pouvez gérer les cookies dans les paramètres de votre navigateur.
+			<p>Ce site n'utilise pas de cookies.</p>
 		</div>
-	</section>
+	</div>
 </Layout>
